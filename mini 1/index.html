@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>My Profile</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Akib Akbar</h1>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="about">
+            <h2>About Me</h2>
+            <img src="profile.jpg" alt="Photo of mine">
+            <p>Hi, I'm akib, a student learning web development. I enjoy building
+                simple websites and exploring new technologies.</p>
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Git</li>
+                <li>c++</li>
+                <li>stl</li>
+            </ul>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>Project One</h3>
+                <p>University Campus Website — A static webpage built to practice core CSS concepts including the box
+                    model, card layouts, and hover/focus states. Features a styled header, in-page navigation, an image
+                    section, and a search form.
+                    HTML · CSS · Box Model</p>
+            </div>
+            <div class="project">
+                <h3>Project Two</h3>
+                <p>flex Basics — Student Cards — A responsive card layout built with Flexbox, demonstrating flex-wrap,
+                    justify-content, and a centered navigation bar with hover effects.
+                    HTML · CSS · Flexbox</p>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Email: akibakbar956070@gmail.com</p>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">send</button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 akib akbar . All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>
