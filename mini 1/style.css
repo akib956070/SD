@@ -1,4 +1,4 @@
-/* ---------- Base ---------- */
+
 * {
   margin: 0;
   padding: 0;
@@ -19,7 +19,7 @@ h3 {
   letter-spacing: 0.5px;
 }
 
-/* ---------- Header ---------- */
+
 header {
   background: linear-gradient(135deg, #6a11cb, #2575fc);
   color: white;
@@ -46,7 +46,7 @@ nav a:hover {
   background: rgba(193, 173, 242, 0.2);
 }
 
-/* ---------- Main layout ---------- */
+
 main {
   max-width: 800px;
   margin: 0 auto;
@@ -66,7 +66,7 @@ section h2 {
   padding-bottom: 5px;
 }
 
-/* ---------- About ---------- */
+
 #about img {
   width: 160px;
   height: 160px;
@@ -78,7 +78,7 @@ section h2 {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
-/* ---------- Skills ---------- */
+
 #skills ul {
   list-style: none;
   display: flex;
@@ -96,7 +96,7 @@ section h2 {
   font-size: 0.95rem;
 }
 
-/* ---------- Projects ---------- */
+
 .project {
   background: white;
   padding: 20px;
@@ -116,7 +116,7 @@ section h2 {
   margin-bottom: 8px;
 }
 
-/* ---------- Contact ---------- */
+
 #contact p {
   margin-bottom: 15px;
   font-weight: 600;
@@ -170,7 +170,7 @@ form button:hover {
   opacity: 0.9;
 }
 
-/* ---------- Footer ---------- */
+
 footer {
   background: #2b2d42;
   color: white;
