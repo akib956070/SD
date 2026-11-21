@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Now</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-slate-100 text-slate-800 font-sans">
+
+  <header class="bg-blue-800 text-white text-center py-7 px-4">
+    <h1 class="text-3xl font-bold mb-1">Weather Now</h1>
+    <p class="text-sm opacity-90">Search any city to see the current weather and a 5-day forecast.</p>
+  </header>
+
+  <main class="max-w-3xl mx-auto my-6 px-4">
+
+    <form id="search-form" class="flex gap-2 mb-4">
+      <input type="text" id="city-input" placeholder="Enter a city name (e.g. Dhaka)" autocomplete="off"
+        class="flex-1 p-3 border border-slate-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-800">
+      <button type="submit" class="bg-blue-800 text-white px-6 py-3 rounded-md hover:bg-blue-900">Search</button>
+    </form>
+
+    <div id="message" class="hidden"></div>
+
+    <section class="bg-white rounded-lg shadow p-5 mb-4">
+      <h2 class="text-lg font-bold mb-2">Favorite Cities</h2>
+      <div id="favorites-list" class="flex flex-wrap gap-2"></div>
+    </section>
+
+    <section id="weather-section" class="hidden">
+
+      <div class="bg-white rounded-lg shadow p-5 mb-4">
+        <div class="flex justify-between items-start flex-wrap gap-2">
+          <div>
+            <h2 id="city-name" class="text-xl font-bold"></h2>
+            <p id="condition" class="text-slate-500"></p>
+          </div>
+          <button id="fav-btn" class="bg-blue-100 text-blue-800 text-sm px-3 py-2 rounded-md hover:bg-blue-200">&#9734;
+            Save City</button>
+        </div>
+
+        <div class="flex items-center gap-4 my-4">
+          <span id="icon" class="text-6xl"></span>
+          <span id="temp" class="text-5xl font-bold"></span>
+        </div>
+
+        <div class="flex gap-8 flex-wrap text-slate-600">
+          <p>Humidity: <strong id="humidity"></strong></p>
+          <p>Wind: <strong id="wind"></strong></p>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-lg shadow p-5 mb-4">
+        <div class="flex justify-between items-center flex-wrap gap-2 mb-3">
+          <h2 class="text-lg font-bold">5-Day Forecast</h2>
+          <select id="filter-select" class="p-2 border border-slate-300 rounded-md text-sm">
+            <option value="all">All days</option>
+            <option value="rainy">Rainy days (50%+ chance)</option>
+            <option value="dry">Dry days (below 50%)</option>
+          </select>
+        </div>
+
+        <div id="forecast-list" class="grid grid-cols-2 sm:grid-cols-5 gap-2"></div>
+
+        <div id="day-details" class="hidden mt-4 p-4 bg-slate-50 border-l-4 border-blue-800 rounded"></div>
+      </div>
+
+    </section>
+  </main>
+
+  <footer class="text-center text-sm text-slate-500 p-5">
+    <p>Data from Open-Meteo.com | Mini Project 3-4 (CSE-2340)</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
